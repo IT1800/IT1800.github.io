@@ -1,16 +1,19 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-	margin: 0px;
+	margin: 20px;
 	padding: 0px;
 	color: #402b16;
+	font-size: 18px;
 }
 main{
 	margin-left: 20px;
 	margin-right: 20px;
 }
+h3{
+	font-size: 20px;
+}
 
-/* header/banner styling */
 .header{
 	background-color: #e3ce9c;
 	height: 150px; 
@@ -100,13 +103,16 @@ h1{
   
 }
 
-/* homepage table styling */
+/* homepage styling */
+table{
+	width: 75%;
+}
 table, th{
 	border: 2px solid #402b16;
 	border-collapse: collapse;
 	color:#e3ce9c ;
 	background-color: #a56928;
-	text-align: center; 
+	text-align: center;
 }
 th{
 	padding:15px;
@@ -119,6 +125,11 @@ td{
 	background-color:#e3ce9c;
 }
 
+iframe {
+	width: 75%;
+}
+
+/* styling for contact and rocommendation forms */
 form {
   background-color: #e3ce9c;
   padding: 40px 60px;
