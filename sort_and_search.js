@@ -3,7 +3,8 @@
 async function loadBooks() {
     const response = await fetch(JSON_SRC);
     const books = await response.json();
-    return books;
+	sortBooks(books);
+    return renderBooks(books);
 }
 
 //sort books based on author, title, series, or date
@@ -13,7 +14,6 @@ function sortBooks(books) {
             return books.sort((a, b) => a.author.localeCompare(b.author));
         case "title":
             return books.sort((a, b) => a.title.localeCompare(b.title));
-        case "series":
 			return books.sort((a, b) => 
         		a.series.localeCompare(b.series) || 
         		Number(a.series_order) - Number(b.series_order)
@@ -33,12 +33,7 @@ function renderBooks(books) {
         const item = document.createElement("div");
         item.classList.add("book-item");
 
-        item.innerHTML = `
-            <h3>${book.title}</h3>
-            <p><strong>Author:</strong> ${book.author}</p>
-            <p><strong>Series:</strong> ${book.series}</p>
-            <p><strong>Date:</strong> ${book.date_added ?? ""}</p>
-        `;
+        item.innerHTML = "<h3>${book.title}</h3><p><strong>Author:</strong> ${book.author}</p><p><strong>Series:</strong> ${book.series}</p><p><strong>Date:</strong> ${book.date_added ?? ""}</p>";
 
         list.appendChild(item);
     });
