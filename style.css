@@ -5,13 +5,6 @@ body{
 	color: #402b16;
 	font-size: 18px;
 }
-main{
-	margin-left: 20px;
-	margin-right: 20px;
-}
-h2{
-	font-size: 20px;
-}
 
 .header{
 	background-color: #e3ce9c;
@@ -29,6 +22,13 @@ h1{
 	font-size:50px;
 }
 
+main{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+h2{
+	font-size: 20px;
+}
 
 
 /* navigation bar styling */
@@ -101,7 +101,15 @@ h1{
  	
   
 }
-
+#search {
+    width: 750px;
+    font-size: 16px;
+    padding: 10px 12px;
+    margin: 10px auto 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
 /* homepage styling */
 table{
 	width: 75%;
@@ -126,6 +134,52 @@ td{
 
 iframe {
 	width: 75%;
+}
+
+/*styling for book pages*/
+#book-list {
+    width: 750px;
+    margin: 20px auto;
+}
+
+.book-row {
+    display: grid;
+    grid-template-columns: 70px 1fr 180px;
+    gap: 15px;
+    padding: 14px 0;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.cover {
+    width: 60px;
+    height: 90px;
+    object-fit: cover;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1774c6;
+}
+
+.series {
+    font-size: 13px;
+    color: #555;
+    margin-top: 2px;
+}
+
+.author {
+    font-size: 14px;
+    text-align: right;
+    color: #333;
 }
 
 /* styling for contact and rocommendation forms */

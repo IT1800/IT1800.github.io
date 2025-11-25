@@ -4,14 +4,22 @@
 	<meta charset="utf-8">
 	<title>Library</title>
 	<link rel="stylesheet" href="../../style.css">
+	
+	<!-- set json book list and sorting method -->
+	<script>
+        const JSON_SRC = "../../library_books.json";  
+        const SORT_MODE = "author";            
+    </script>
 </head>
 
 <body>
+	<!-- Header with logo and Name -->
 	<header class="header">
 		<img src="../../Isabella's_Logo_favicon/android-chrome-192x192.png"  height="125" alt="isabella's library logo"/>
 		<h1>Isabella's Library</h1>
 	</header>
 	
+	<!-- Navigation bar with Home, Library, TBR, Recommended, and Contact tabs -->
 	<nav class="navbar">
 		<ul>
 			<li><a href="../index.html">Home</a></li>
@@ -54,7 +62,11 @@
 	</nav>
 	
 	<main>
-		
+		<h2>Books Sorted by Author</h2>
+    	<div id="book-list"></div>
+
+    	<!-- import javascript -->
+    	<script src="../../sort_and_search.js"></script>
 	</main>
 </body>
 </html>
