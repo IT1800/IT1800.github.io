@@ -184,7 +184,7 @@
 	{
 		"title":"Siren's Fury",
 		"author": "Mary Weber",
-		"series": "Storm Weber",
+		"series": "Storm Siren",
 		"series_order":"2",
 		"cover_image":"",
 		"date_added":null
@@ -551,7 +551,7 @@
 		
 	},
 	{
-		"title":"How the King of ELfhame Learned to Hate Stories",
+		"title":"How the King of Elfhame Learned to Hate Stories",
 		"author": "Holly Black",
 		"series": "The Folk of the Air",
 		"series_order":"3.5",
@@ -606,7 +606,7 @@
 	},
 	{
 		"title":"A Touch of Darkness",
-		"author": "",
+		"author": "Scarlett St. Clair",
 		"series": "Hades x Persephone Saga",
 		"series_order":"1",
 		"cover_image":"",
@@ -615,8 +615,8 @@
 	},
 	{
 		"title":"A Touch of Ruin",
-		"author": "",
-		"series": "Hades x Persephone Sage",
+		"author": "Scarlett St. Clair",
+		"series": "Hades x Persephone Saga",
 		"series_order":"2",
 		"cover_image":"",
 		"date_added":"08/2021"
@@ -624,7 +624,7 @@
 	},
 	{
 		"title":"A Touch of Malice",
-		"author": "",
+		"author": "Scarlett St. Clair",
 		"series": "Hades x Persephone Saga",
 		"series_order":"3",
 		"cover_image":"",
@@ -642,7 +642,7 @@
 	},
 	{
 		"title":"Lady Smoke",
-		"author": "laura Sebastian",
+		"author": "Laura Sebastian",
 		"series": "Ash Princess",
 		"series_order":"2",
 		"cover_image":"",
@@ -704,7 +704,7 @@
 		
 	},
 	{
-		"title":"Ignight Me",
+		"title":"Ignite Me",
 		"author": "Tahereh Mafi",
 		"series": "Shatter Me",
 		"series_order":"3",
@@ -769,7 +769,7 @@
 	{
 		"title":"Kingdom of the Wicked",
 		"author": "Kerri Maniscalco",
-		"series": "Kingdom of The Wicked",
+		"series": "Kingdom of the Wicked",
 		"series_order":"1",
 		"cover_image":"",
 		"date_added":"02/2023"
@@ -938,7 +938,7 @@
 		
 	},
 	{
-		"title":"My Roomate Is a Vampire",
+		"title":"My Roommate Is a Vampire",
 		"author": "Jenna Levine",
 		"series": "My Vampires",
 		"series_order":"1",
@@ -1192,7 +1192,7 @@
 	{
 		"title":"The Broken Elf King",
 		"author": "Leia Stone",
-		"series": "King of Avalier",
+		"series": "Kings of Avalier",
 		"series_order":"2",
 		"cover_image":"",
 		"date_added":"06/2024"
@@ -1264,8 +1264,8 @@
 	{
 		"title":"Spring's Descent",
 		"author": "C. L. Briar",
-		"series": "",
-		"series_order":"",
+		"series": null,
+		"series_order":null,
 		"cover_image":"",
 		"date_added":"07/2024"
 		
@@ -1280,7 +1280,7 @@
 		
 	},
 	{
-		"title":"Beautiful Villan",
+		"title":"Beautiful Villain",
 		"author": "Rebecca Kenney",
 		"series": "Gilded Monsters",
 		"series_order":"1",
@@ -1417,8 +1417,8 @@
 	{
 		"title":"King of Greed",
 		"author": "Ana Huang",
-		"series": "3",
-		"series_order":"Kings of Sin",
+		"series": "Kings of Sin",
+		"series_order":"3",
 		"cover_image":"",
 		"date_added":"10/2024"
 		
@@ -1438,7 +1438,7 @@
 		"series": "Filthy Rich Vampires",
 		"series_order":"1",
 		"cover_image":"",
-		"date_added":""
+		"date_added":"10/2024"
 		
 	},
 	{
@@ -1543,7 +1543,7 @@
 	{
 		"title":"Court of Ravens and Ruin",
 		"author": "Eliza Raine",
-		"series": "the Shadow Bound Queen",
+		"series": "The Shadow Bound Queen",
 		"series_order":"1",
 		"cover_image":"",
 		"date_added":"12/2024"
@@ -1593,9 +1593,7 @@
 		"cover_image":"",
 		"date_added":"12/2024"
 		
-	},
-	
-	
+	}
 	
 	
 ]
