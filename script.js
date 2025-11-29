@@ -61,7 +61,7 @@ function displayBooks(books) {
             <p><strong>Series:</strong> ${book.series} (#${book.series_order})</p>
             <p><strong>Date Added:</strong> ${book.date_added ?? "N/A"}</p>
             <hr>
-        `;
+        ';
         container.appendChild(div);
     });
 }

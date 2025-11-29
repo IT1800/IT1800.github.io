@@ -4,6 +4,12 @@
 	<meta charset="utf-8">
 	<title>Library</title>
 	<link rel="stylesheet" href="../../style.css">
+	
+	<!-- set json book list and sorting method -->
+	<script>
+        const JSON_SRC = "../../library_books.json";  
+        const SORT_MODE = "date";            
+    </script>
 </head>
 
 <body>
@@ -53,7 +59,11 @@
 	</nav>
 	
 	<main>
-		
+		<h2>Books Sorted by Date Added</h2>
+    	<div id="book-container"></div>
+
+    	<!-- import javascript -->
+    	<script src="../../script.js"></script>
 	</main>
 </body>
 </html>
