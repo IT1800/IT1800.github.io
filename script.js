@@ -1,7 +1,7 @@
 // Load JSON file
 async function loadBooks() {
     try {
-        const response = await fetch(JSON_SRC); // use global path
+        const response = await fetch(JSON_SRC);
         const books = await response.json();
         return books;
     } catch (error) {
@@ -21,20 +21,24 @@ function sortByTitle(books) {
     return books.sort((a, b) => a.title.localeCompare(b.title));
 }
 
-// Sort by series (then numeric series order)
+// Sort by series (handles nulls safely)
 function sortBySeries(books) {
     return books.sort((a, b) => {
-        const seriesCompare = a.series.localeCompare(b.series);
+        const seriesA = a.series ?? "";
+        const seriesB = b.series ?? "";
+
+        const seriesCompare = seriesA.localeCompare(seriesB);
         if (seriesCompare !== 0) return seriesCompare;
+
         return Number(a.series_order) - Number(b.series_order);
     });
 }
 
-// Sort by date (mm/yyyy), placing null dates FIRST
+// Sort by date (mm/yyyy), placing null FIRST
 function sortByDate(books) {
     return books.sort((a, b) => {
         if (!a.date_added && !b.date_added) return 0;
-        if (!a.date_added) return -1; // null comes FIRST
+        if (!a.date_added) return -1;
         if (!b.date_added) return 1;
 
         const [aMonth, aYear] = a.date_added.split("/").map(Number);
@@ -55,20 +59,34 @@ function displayBooks(books) {
     books.forEach(book => {
         const div = document.createElement("div");
         div.className = "book-item";
-        div.innerHTML = `
-            <h3>${book.title}</h3>
-            <p><strong>Author:</strong> ${book.author}</p>
-            <p><strong>Series:</strong> ${book.series} (#${book.series_order})</p>
-            <p><strong>Date Added:</strong> ${book.date_added ?? "N/A"}</p>
-            <hr>
-        ';
+
+        // Build only the lines that exist
+        let html = `<h3>${book.title}</h3>`;
+        html += `<p><strong>Author:</strong> ${book.author}</p>`;
+
+        // Only show series line if NOT null or empty
+        if (book.series && book.series.trim() !== "") {
+            html += `<p><strong>Series:</strong> ${book.series}`;
+            if (book.series_order) {
+                html += ` (#${book.series_order})`;
+            }
+            html += `</p>`;
+        }
+
+        // Only show date if not null/empty
+        if (book.date_added && book.date_added.trim() !== "") {
+            html += `<p><strong>Date Added:</strong> ${book.date_added}</p>`;
+        }
+
+        html += `<hr>`;
+
+        div.innerHTML = html;
         container.appendChild(div);
     });
 }
 
 // ---- INITIALIZATION ----
 loadBooks().then(books => {
-
     let sorted;
 
     switch (SORT_MODE) {
@@ -90,6 +108,3 @@ loadBooks().then(books => {
 
     displayBooks(sorted);
 });
-
-
-
