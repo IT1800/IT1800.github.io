@@ -4,17 +4,26 @@
 	<meta charset="utf-8">
 	<title>TBR</title>
 	<link rel="stylesheet" href="../../style.css">
+	
+	<!-- set json book list and sorting method -->
+	<script>
+        const JSON_SRC = "../../tbr_books.json";  
+        const SORT_MODE = "title";            
+    </script>
 </head>
 
 <body>
+	<!-- header with logo and website name -->
 	<header class="header">
 		<img src="../../Isabella's_Logo_favicon/android-chrome-192x192.png"  height="125" alt="isabella's library logo"/>
 		<h1>Isabella's Library</h1>
 	</header>
 	
+	<!-- navigation bar with links and dropdown menus -->
 	<nav class="navbar">
 		<ul>
 			<li><a href="../../index.html">Home</a></li>
+			<!-- Library Books dropdown -->
 			<li class="dropdown">
 				<a href="../library_pages/by_date.html">Library</a>
 				<div class="dropdown-content">		
@@ -24,6 +33,7 @@
 					<div><a href="../library_pages/by_title.html">Sort by Title</a></div>
 				</div>
 			</li>
+			<!-- TBR books dropdown -->
 			<li class="dropdown">
 				<a href="by_date.html">TBR</a>
 				<div class="dropdown-content">		
@@ -33,6 +43,7 @@
 					<div><a href="by_title.html">Sort by Title</a></div>
 				</div>
 			</li>
+			<!-- Recommended books dropdown -->
 			<li class="dropdown">
 				<a href="../recommended_pages/by_date.html">Recommended</a>
 				<div class="dropdown-content">		
@@ -42,7 +53,7 @@
 				</div>
 			</li>
 			
-			
+			<!-- Contact forms dropdown -->
 			<li class="dropdown"><a href="../contact.html">Contact</a>
 				<div class="dropdown-content">
 					<div><a href="../contact.html">Contact Us Form</a></div>
@@ -54,7 +65,11 @@
 	</nav>
 	
 	<main>
-		
+		<h2>TBR Books Sorted by Title</h2>
+    	<div id="book-container"></div>
+
+    	<!-- import javascript for sorting and displaying books -->
+    	<script src="../../script.js"></script>
 	</main>
 </body>
 </html>
