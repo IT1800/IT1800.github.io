@@ -65,7 +65,7 @@ function displayBooks(books) {
         html += `<p><strong>Author:</strong> ${book.author}</p>`;
 
         // Only show series line if NOT null or empty
-        if (book.series && book.series.trim() !== "") {
+        if (book.series && String(book.series).trim() !== "") {
             html += `<p><strong>Series:</strong> ${book.series}`;
             if (book.series_order) {
                 html += ` (#${book.series_order})`;
@@ -74,7 +74,7 @@ function displayBooks(books) {
         }
 
         // Only show date if not null/empty
-        if (book.date_added && book.date_added.trim() !== "") {
+        if (book.date_added && String(book.date_added).trim() !== "") {
             html += `<p><strong>Date Added:</strong> ${book.date_added}</p>`;
         }
 
