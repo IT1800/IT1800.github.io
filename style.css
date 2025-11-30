@@ -16,8 +16,9 @@ body{
 }
 .footer {
 	background-color: #e3ce9c;
-	height: 50px; 
+	height: 100px; 
 	display: flex;
+	text-decoration: none;
 }
 
 h1{
