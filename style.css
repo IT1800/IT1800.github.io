@@ -15,10 +15,28 @@ body{
 	
 }
 .footer {
-	background-color: #e3ce9c;
-	height: 100px; 
-	display: flex;
-	text-decoration: none;
+    background-color: #e3ce9c;
+    padding: 25px 10px;
+	margin-top: 20px;
+    margin-left: 50px;
+	margin-right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #402b16;
+    font-size: 18px;
+    gap: 8px;
+}
+
+.footer a {
+    color: #402b16;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 6px;
 }
 
 h1{
@@ -36,7 +54,7 @@ h3{
 }
 
 
-main .footer{
+main{
 	margin-left: 50px;
 	margin-right: 50px;
 }
