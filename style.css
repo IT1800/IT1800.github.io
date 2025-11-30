@@ -3,7 +3,7 @@
 body{
 	margin:0px;
 	color: #402b16;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .header{
@@ -38,6 +38,7 @@ h1{
 }
 h2{
 	font-size: 25px;
+	text-decoration: underline;
 }
 h3{
 	font-size: 19px;
