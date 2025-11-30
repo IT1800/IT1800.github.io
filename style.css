@@ -14,6 +14,12 @@ body{
 	justify-content: center;
 	
 }
+.footer {
+	background-color: #e3ce9c;
+	height: 50px; 
+	display: flex;
+}
+
 h1{
 	margin: 0px;
 	padding: 0px 10px;
