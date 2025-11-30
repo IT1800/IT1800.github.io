@@ -130,7 +130,10 @@ td{
 }
 
 iframe {
-	width: 75%;
+    width: 75%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
 }
 
 /*styling for book pages*/
