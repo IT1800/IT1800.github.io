@@ -28,7 +28,8 @@ body{
 	color: #3a663b;
 }
 .footer a:hover{
-	text-decoration: underline bold;
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 
