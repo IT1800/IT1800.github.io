@@ -14,6 +14,19 @@ body{
 	justify-content: center;
 	
 }
+.footer{
+	background-color: #e3ce9c;
+	height: auto; 
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	justify-content: center;
+	padding: 10px;
+}
+.footer a{
+	text-decoration: none;
+	color: #3a663b;
+}
 
 
 h1{
