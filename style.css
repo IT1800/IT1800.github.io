@@ -27,6 +27,9 @@ body{
 	text-decoration: none;
 	color: #3a663b;
 }
+.footer a:hover{
+	text-decoration: underline bold;
+}
 
 
 h1{
