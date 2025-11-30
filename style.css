@@ -3,7 +3,7 @@
 body{
 	margin:0px;
 	color: #402b16;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .header{
@@ -21,14 +21,19 @@ h1{
 	color: #402b16 ;
 	font-size:50px;
 }
+h2{
+	font-size: 25px;
+}
+h3{
+	font-size: 19px;
+}
+
 
 main{
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
-h2{
-	font-size: 20px;
-}
+
 
 
 /* navigation bar styling */
