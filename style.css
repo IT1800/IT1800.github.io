@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* ---------- BASE STYLES ---------- */
+/* basic styling */
 body {
     margin: 0;
     color: #402b16;
@@ -28,11 +28,11 @@ h3 {
 
 main {
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
     max-width: 1100px;
 }
 
-/* ---------- HEADER & FOOTER ---------- */
+/* header and footer styling */
 .header {
     background-color: #e3ce9c;
     height: 150px;
@@ -40,8 +40,6 @@ main {
     align-items: center;
     justify-content: center;
 }
-
-/* Footer column layout already good */
 .footer {
     background-color: #e3ce9c;
     padding: 20px;
@@ -61,7 +59,7 @@ main {
     text-decoration: underline;
 }
 
-/* ---------- NAVIGATION ---------- */
+/* vavigation bar styling */
 .navbar {
     font-size: 20px;
 }
@@ -75,7 +73,7 @@ main {
     justify-content: center;
     align-items: center;
     height: auto;
-    flex-wrap: wrap; /* lets menu wrap on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .navbar li {
@@ -93,7 +91,7 @@ main {
     background-color: #402b16;
 }
 
-/* Dropdown */
+/* nav-bar dropdown */
 .dropdown {
     text-align: center;
     position: relative;
@@ -128,7 +126,7 @@ main {
     display: block;
 }
 
-/* ---------- TABLES ---------- */
+/* homepage */
 table {
     width: 100%;
     max-width: 900px;
@@ -154,7 +152,6 @@ td {
     background-color: #e3ce9c;
 }
 
-/* ---------- IFRAME ---------- */
 iframe {
     width: 100%;
     max-width: 900px;
@@ -163,7 +160,7 @@ iframe {
     margin: auto;
 }
 
-/* ---------- BOOK LIST ---------- */
+/* book lists */
 #book-list {
     width: 100%;
     max-width: 750px;
@@ -204,7 +201,7 @@ iframe {
     color: #333;
 }
 
-/* ---------- FORMS ---------- */
+/* forms */
 form {
     background-color: #e3ce9c;
     padding: 40px 30px;
@@ -246,7 +243,6 @@ textarea {
     height: 120px;
 }
 
-/* ---------- MEDIA QUERIES ---------- */
 
 /* Tablets */
 @media (max-width: 900px) {
@@ -263,7 +259,7 @@ textarea {
     }
 }
 
-/* Mobile Phones */
+/* Phones */
 @media (max-width: 600px) {
     h1 {
         font-size: 32px;
@@ -303,7 +299,6 @@ textarea {
     }
 }
 
-/* Small Mobile */
 @media (max-width: 400px) {
     h1 { font-size: 26px; }
 
