@@ -221,7 +221,13 @@ form h2 {
     flex-direction: column;
     margin-bottom: 20px;
 }
+#series_name {
+    display: none;
+}
 
+input[name="series"][value="yes"]:checked ~ #series_name{
+    display: block;
+}
 label {
     font-weight: bold;
     margin-bottom: 8px;
@@ -239,6 +245,17 @@ textarea {
 
 textarea {
     height: 120px;
+}
+.btn{
+	background-color:#a56928 ;
+	color:white;
+	border: thin;
+	padding: 5px;
+}
+.btn:hover{
+	background-color:#402b16 ;
+	box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+	
 }
 
 
