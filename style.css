@@ -27,7 +27,7 @@ h3 {
 }
 
 main {
-    margin: 0 auto;
+    margin: 0px 50px;
     padding: 0 10px;
     max-width: 1100px;
 }
@@ -130,7 +130,6 @@ main {
 table {
     width: 100%;
     max-width: 900px;
-    margin: auto;
 }
 
 table, th {
@@ -157,7 +156,6 @@ iframe {
     max-width: 900px;
     aspect-ratio: 16 / 9;
     display: block;
-    margin: auto;
 }
 
 /* book lists */
